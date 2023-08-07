@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+}
+
+/* navigation */
+
+nav {
+  background-color: #233e50;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  gap: 5rem;
+  font-size: 20px;
+}
+
+/* Style the anchor elements inside the ul to have white color */
+ul li a {
+  color: #fff;
+  text-decoration: none; /* Optionally, remove the underline for links */
+  transition: color 0.3s, font-size 0.3s; /* Add transition for smooth effect */
+}
+
+/* Add hover effect */
+ul li a:hover {
+  color: #ffcc00; /* Change color to yellow (#ffcc00) on hover */
+  font-size: 22px; /* Increase font size to 22px on hover */
+}
+
+.button {
+  border: none;
+  font-size: 20px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: #65e4a3;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s, font-size 0.3s; /* Add transition for smooth effect */
+}
+
+/* Add hover effect for login button */
+.button:hover {
+  background-color: #ffcc00; /* Change background color to yellow (#ffcc00) on hover */
+  font-size: 22px; /* Increase font size to 22px on hover */
+}
+
+
+/* Add the hover effect for the image */
+.hover-image {
+  transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+/* Apply the hover effect when the mouse pointer hovers over the image */
+.hover-image:hover {
+  animation: shake 0.9s ease-in-out; /* Add the shake animation on hover */
+}
+
+/* Keyframes for the shake animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-5px); }
+  20% { transform: translateX(5px); }
+  30% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  50% { transform: translateX(-5px); }
+  60% { transform: translateX(5px); }
+  70% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  90% { transform: translateX(-5px); }
+  100% { transform: translateX(5px); }
+}
+
+/* about us */
+
+.about{
+  background-color: #0a2640;
+  color: #fff;
+  height: 600px;
+  padding: 4rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.about h1{
+  font-size: 3rem;
+}
+
+.about p{
+  opacity: 0.5;
+}
+
+/* hero-images */
+
+.grid-iterms{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 2rem;
+  position: absolute;
+  top: 550px;
+  width: 50%;
+  justify-content: center;
+}
+
+.grid-iterms > :nth-child(2){
+  grid-row: span 2;
+
+}
+
+.hero-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
